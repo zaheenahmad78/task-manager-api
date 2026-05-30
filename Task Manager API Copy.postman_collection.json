@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "fc567608-b1e6-4f98-a364-b42af1de5467",
+    "name": " Task Manager API Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54614827",
+    "_collection_link": "https://go.postman.co/collection/54614827-fc567608-b1e6-4f98-a364-b42af1de5467?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWE3ZDllMzk2ZTMxNDIxYWJlMzliZiIsImlhdCI6MTc4MDEyMTAwM30.USB6qocIYoaZNmvNHqZo2I0UwAq2sA7rdoO5MrLvXPo",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"My Task\",\r\n  \"description\": \"Testing API\",\r\n  \"status\": \"pending\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
